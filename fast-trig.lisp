@@ -23,7 +23,7 @@
 (defun sin-bench (n)
   (declare (optimize (speed 3) (safety 0) (debug 0)))
   (time (loop repeat n for x of-type single-float
-	      from 0.0 by 0.1 summing (sinf x))))
+	      from 0.0 by 0.1 summing (sin x))))
 
 ;(sin-bench 100000000)
 
